@@ -3,16 +3,21 @@
 // JavaScript part
 let array = [
     {
-        username: "sara",
-        password: "Lama1234"
+        email: "sara123@gmail.com",
+        password: "Lama1234",
+        fullname:"sara ababneh"
     },
     {
-        username: "Lama",
-        password: "Lama1234"
+        
+        email: "sara321@gmail.com",
+        password: "Lama1234",
+        fullname:"mohhamed"
     },
     {
-        username: "shatha",
-        password: "Lama1234"
+        
+        email: "Ail123@gmail.com",
+        password: "Lama1234",
+        fullname:"Ail "
     }
 ];
 
@@ -23,10 +28,13 @@ function moh(event) {
     let found = false;
 
     for (let i = 0; i < array.length; i++) {
-        if (array[i].username === emailInput) {
+        if (array[i].email === emailInput) {
             found = true;
             if (array[i].password === password) {
                 window.alert("Login successful!");
+                localStorage.setItem("currentUserName",array[i].fullname)
+
+                console.log(localStorage.getItem)
                 window.location.href=("/html/home.html")
 
             } else {
