@@ -27,7 +27,7 @@ button.addEventListener("click", () => {
   for (let i = 0; i < myArray.length; i++) {
     if (current.name == myArray[i]) {
       welcome.textContent = "You're complete it";
-      window.location.href = "/Html/result.html";
+      setTimeout((  window.location.href = "/Html/result.html"),1000);
       w = true;
     }
   }
@@ -35,15 +35,6 @@ button.addEventListener("click", () => {
   if (w == false) {
     myArray.push(current.name);
     localStorage.setItem("completedUsers", JSON.stringify(myArray));
-    // بعديييين
-    setTimeout((window.location.href = "/Html/quiz.html"));
+    window.location.href = "/Html/quiz.html"
   }
-
-  // if (x == y[y.length - 1].name) {
-  //     completedUsers.push(x);
-  //     localStorage.setItem("completedUsers1", JSON.stringify(completedUsers));
-  //     button.innerHTML = `<a href="dhjs">kkf</a>`;
-  //
-  //     button.style.display = "none";
-  // }
 });

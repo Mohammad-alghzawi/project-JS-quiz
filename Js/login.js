@@ -1,23 +1,3 @@
-// JavaScript part
-// let array = [
-//     {
-//         email: "sara123@gmail.com",
-//         password: "Lama1234",
-//         fullname:"sara ababneh"
-//     },
-//     {
-
-//         email: "sara321@gmail.com",
-//         password: "Lama1234",
-//         fullname:"mohhamed"
-//     },
-//     {
-
-//         email: "Ali123@gmail.com",
-//         password: "Lama1234",
-//         fullname:"Ali "
-//     }
-// ];
 
 let array = JSON.parse(localStorage.getItem("userInfo"));
 console.log(array);

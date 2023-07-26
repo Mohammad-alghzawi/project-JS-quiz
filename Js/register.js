@@ -1,8 +1,8 @@
-window.addEventListener("load", () => {
+
   if (localStorage.getItem("userInfo") == null) {
     localStorage.setItem("userInfo", "[]");
   }
-});
+
 
 const registerForm = document.getElementById("registerForm");
 registerForm.addEventListener("submit", (event) => {
@@ -10,7 +10,7 @@ registerForm.addEventListener("submit", (event) => {
   const namePattern = /^[A-Za-z\s]+$/;
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const passwordPattern =
-    /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,15}$/;
+    /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&_])[A-Za-z\d@$!%*?&]{6,15}$/;
 
   const email = document.getElementById("email").value;
   const passwordInput = document.getElementById("new-password").value;

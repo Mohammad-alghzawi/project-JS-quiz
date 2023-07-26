@@ -3,7 +3,7 @@ let option = document.querySelector(".option");
 let container = document.querySelector(".container");
 let qc = document.querySelector(".numofquestion2");
 let allqc = document.querySelector(".numofquestion");
-titl = document.querySelector("#title");
+let titl = document.querySelector("#title");
 
 let mark = 0;
 let qCount = 0;
